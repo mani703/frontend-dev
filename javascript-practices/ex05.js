@@ -21,9 +21,11 @@
 // 표현식 var s = "hello world" 를
 // 표현식 구문(Expression Statement)으로 만들어
 // 표현식을 실행하게끔 한다.
+console.log("1)");
 var s = "hello world"; console.log(s)
 
 // 1. 개행은 ; 으로 대체된다.
+console.log("2)");
 var s = "hello world"
 console.log(s)
 
@@ -34,4 +36,5 @@ a
 2
 +
 2
+console.log("3)");
 console.log(a)

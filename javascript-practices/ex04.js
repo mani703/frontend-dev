@@ -28,8 +28,13 @@ var f = function(){
     // PI = 0;
 }
 // error : 접근이 안됨
-//console.log(x);
+// console.log(x);
 
+console.log("1)");
 f();
+
+console.log("2)");
 console.log(i);
+
+console.log("3)");
 console.log(j);

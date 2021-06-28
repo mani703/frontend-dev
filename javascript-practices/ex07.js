@@ -17,5 +17,11 @@ var MyObject = function(name, age){
 var o1 = new MyObject("둘리", 10);
 var o2 = new MyObject("마이콜", 20);
 
+console.log("1)");
+myFunction();
+
+console.log("2)");
 console.log(o1);
+
+console.log("3)");
 console.log(o2);

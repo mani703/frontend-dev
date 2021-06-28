@@ -7,21 +7,21 @@ var o = {
     age: 10,
     ifFemale: false
 }
+console.log("1)");
 console.log(o);
 
 var f = function(){
-    console.log("Heelo World");
+    console.log("Hello World");
 }
+console.log("2)");
 f();
-
-var i1 = 10;
-var i2 = new Number(10);
 
 console.log("==================== 객체의 확장 ====================")
 o.another = {
     name: "마이콜",
     age: 30
 };
+console.log("3)");
 console.log(o);
 
 f.another = {
@@ -31,12 +31,22 @@ f.another = {
         console.log(this.name + " : " + this.age);
     }
 };
+console.log("4)");
 console.log(f.another);
+
+console.log("5)");
 f.another.info();
 
+console.log("6)");
+console.log(f);
+
 console.log("==================== 기본 타입은 확장 X ====================")
+console.log("7)");
+var i2 = new Number(10);
 i2.another = {};
 console.log(i2);
 
+console.log("8)");
+var i1 = 10;
 i1.another = {};
 console.log(i1.another);

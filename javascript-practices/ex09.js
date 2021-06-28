@@ -13,15 +13,18 @@ MyObject.prototype.info = function(){
 }
 
 // MyObject 객체 생성1
-var o1 = new MyObject("둘리", 10);
+console.log("1)");
+var o1 = new MyObject("둘리", 10);s
 o1.school = 'multicampus';
 o1.info();
 
 // MyObject 객체 생성2
+console.log("2)");
 var o2 = new MyObject("마이콜", 20);
 o2.info();
 
 // 오버라이딩
+console.log("3)");
 o2.info = function(){
     console.log("비밀!!!");
 }

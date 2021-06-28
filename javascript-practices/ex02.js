@@ -45,9 +45,16 @@ var i = 10;
 var b = true;
 var s = "Hello Wolrd";
 
+console.log("1)");
 console.log("u :" + typeof(u));
+
+console.log("2)");
 console.log("i :" + typeof(i));
+
+console.log("3)");
 console.log("b :" + typeof(b));
+
+console.log("4)");
 console.log("s :" + typeof(s));
 
 console.log("============= [객체1]: object type =============")
@@ -61,29 +68,52 @@ var n = null;
 var a2 = [];
 var o2 = {};
 
+console.log("5)");
 console.log("i2 :" + typeof(i2));
+
+console.log("6)");
 console.log("b2 :" + typeof(b2));
+
+console.log("7)");
 console.log("s2 :" + typeof(s2));
-console.log("o2 :" + typeof(o));
-console.log("a2 :" + typeof(a));
-console.log("o2 :" + typeof(n));
+
+console.log("8)");
+console.log("o :" + typeof(o));
+
+console.log("9)");
+console.log("a :" + typeof(a));
+
+console.log("10)");
+console.log("n :" + typeof(n));
+
+console.log("11)");
 console.log("a2 :" + typeof(a2));
-console.log("a2 :" + typeof(o2));
+
+console.log("12)");
+console.log("o2 :" + typeof(o2));
 
 console.log("============= [객체2]: function type =============")
 var f = new Function("a", "b", "return a + b;");
 var f2 = function(a, b) { return a + b; };
 
-
+console.log("13)");
 console.log("f :" + typeof(f));
+
+console.log("14)");
 console.log("f2 :" + typeof(f2));
 
-console.log("========== 원시타입과 원시타입을 Wrapper 객체는 구분없이 사용가능. ==========")
+console.log("========== 원시타입과 원시타입 Wrapper 객체는 구분없이 사용가능. ==========")
+console.log("15)");
 console.log(i + i2);
+
+console.log("16)");
 console.log(s + s2);
 
 // 원시 타입에 메서드 호출될 때,
 // 임시 Wrapper객체가 만들어 져서 메서드 호출이 일어난 뒤 사라진다.
 console.log("========== 원시타입도 메소드 호출이 가능하다. ==========")
+console.log("17)");
 console.log(b.valueOf());
+
+console.log("18)");
 console.log(b2.valueOf());
