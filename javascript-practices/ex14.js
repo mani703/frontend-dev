@@ -24,6 +24,7 @@ var toQueryString = function(o){
     for(prop in o){
         qs.push(prop + "=" + encodeURIComponent(o[prop]));
     }
+    console.log(qs);
     return qs.join("&");
 }
 
@@ -34,6 +35,6 @@ var param = {
     email: 'mani703@naver.com'
 }
 
-console.log("5)");
+console.log("4)");
 var url5 = url + "?" + toQueryString(param);
 console.log(url5);
