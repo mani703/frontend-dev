@@ -55,7 +55,8 @@ var a5 = [
     }, 20, "javascript", true, {
         email: "dooly@gmail.com",
         name: "name"
-    }, null, undefined];
+    }, null, undefined
+];
 console.log("length: " + a5.length);
 for(var i = 0; i < a5.length; i++){
     console.log(a5[i]);
