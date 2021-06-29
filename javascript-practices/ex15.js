@@ -23,7 +23,7 @@ console.log(
     "시:" + d2.getHours() + "\n" + 
     "분:" + d2.getMinutes() + "\n" + 
     "초:" + d2.getSeconds() + "\n" + 
-    "밀리초:" + d2.getMilliseconds() + "\n"
+    "밀리초:" + d2.getMilliseconds()
 );
 
 console.log("4)");
