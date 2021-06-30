@@ -1,5 +1,5 @@
 /*
-const: Block Scope의 상수 정의
+2. const: Block Scope의 상수 정의
 */
 
 // 1. Block Scope 확인

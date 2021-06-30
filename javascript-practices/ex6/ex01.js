@@ -1,5 +1,5 @@
 /*
-let: Block Scope의 변수 정의
+1. let: Block Scope의 변수 정의
 */
 
 // let의 블록 범위
