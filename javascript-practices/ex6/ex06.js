@@ -61,7 +61,7 @@ console.log(`${studentName}의 성적\n수학: ${math}, 국어: ${korean}, 과�
 // ex5 - 함수의 파라미터
 console.log("5)");
 var averageScore = function({
-        name: studentName,
+        name,
         scores: {
             math = 0,
             korean = 0,
