@@ -8,6 +8,10 @@
 <script>
 $(function(){
 	const $obj = $(".par");
+	$obj.click(function(){
+		cnosole.log("clicked: " + this);	
+	});
+	
 	setTimeout(function(){
 		$obj.css("color", "red");		
 	}, 1000);
