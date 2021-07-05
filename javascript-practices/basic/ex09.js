@@ -6,6 +6,7 @@ var MyObject = function(name, age){
     this.name = name;
     this.age = age;
 };
+
 MyObject.prototype.school = "bit";
 MyObject.prototype.course = "douzone";
 MyObject.prototype.info = function(){
@@ -14,7 +15,7 @@ MyObject.prototype.info = function(){
 
 // MyObject 객체 생성1
 console.log("1)");
-var o1 = new MyObject("둘리", 10);s
+var o1 = new MyObject("둘리", 10);
 o1.school = 'multicampus';
 o1.info();
 
