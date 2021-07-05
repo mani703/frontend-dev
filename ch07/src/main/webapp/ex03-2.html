@@ -3,19 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<!-- 개발소스버전(서비스 서버 호스팅) -->
 <script type="text/javascript" src="jquery/jquery-simple.js"></script>
 <script>
 $(function(){
 	const $obj = $(".par");
 	$obj.click(function(){
-		cnosole.log("clicked: " + this);	
+		console.log("clicked:" + this);	
 	});
 	
 	setTimeout(function(){
-		$obj.css("color", "red");		
+		$obj.css("color", "red");
 	}, 1000);
-	
 });
 </script>
 </head>
@@ -23,7 +21,7 @@ $(function(){
 	<h1 id="header">Simple jQuery 만들기1</h1>
 	<p class="par">문장1</p>
 	<p>문장2</p>
-	<p class=par>문장3</p>
+	<p class="par">문장3</p>
 	<p>문장4</p>
 </body>
 </html>
