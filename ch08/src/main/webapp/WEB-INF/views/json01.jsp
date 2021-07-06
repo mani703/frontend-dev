@@ -13,7 +13,10 @@ $(function(){
 	$("button").click(function(){
 		$.ajax({
 			url: "${pageContext.request.contextPath }/api/json",
+			async: true,
 			dataType: "json",
+			type: "get",
+			data: "",
 			success: function(response){
 				let html = "";
 				html += ("<h4>" + response.data.no + "</h4>");
