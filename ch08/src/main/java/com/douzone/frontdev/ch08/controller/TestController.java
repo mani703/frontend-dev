@@ -12,4 +12,8 @@ public class TestController {
 		return "text";
 	}
 
+	@RequestMapping("/html")
+	public String html() {
+		return "html";
+	}
 }
