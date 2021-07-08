@@ -11,7 +11,23 @@
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="${pageContext.request.contextPath }/jquery/jquery-3.6.0.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="${pageContext.request.contextPath }/ejs/ejs.js" type="text/javascript"></script>
 <script>
+// var render = function(vo, mode){
+//	html =
+//		"<li data-no='" + vo.no + "'>" +
+//			"<strong>" + vo.name + "</strong>" +
+//			"<p>" + vo.message + "<br> 비번:1234 -,.-</p>" +
+// 			"<strong></strong>" +
+//			"<a href='' data-no='"+ vo.no + "'>삭제</a>" +
+//		"</li>";
+//	$("#list-guestbook")[mode ? "append" : "prepend"](html);
+// }
+
+var listItemEJS = new EJS({
+	url: "${pageContext.request.contextPath }/ejs/listitem-template.ejs"
+});
+
 $(function(){
 	$("#add-form").submit(function(event){
 		event.preventDefault();
@@ -45,17 +61,9 @@ $(function(){
 			contentType: "application/json",   
 			data: JSON.stringify(vo),
 			success: function(response){
-				var vo = response.data;
-				
-				html =
-					"<li data-no='" + vo.no + "'>" + 
-						"<strong>" + vo.name + "</strong>" +
-						"<p>" + vo.message + "</p>" +
-						"<strong></strong>" + 
-						"<a href='' data-no='" + vo.no + "'>삭제</a>" + 
-					"</li>";
-					
-				$("#list-guestbook").prepend(html);	
+				// render(vo, false);
+				var html = listItemEJS.render(response.data);
+				$("#list-guestbook").prepend(html);
 			}
 		});		
 		
