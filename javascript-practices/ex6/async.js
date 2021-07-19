@@ -49,6 +49,6 @@ req02("http://www.mani703.com/api")
 })
 */
 
-fetch();
+fetch("http://www.mani703.com/api");
 
 console.log('do something');
