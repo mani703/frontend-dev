@@ -29,7 +29,8 @@ const Circle = function(x, y, r){
     this.r = r;
 }
 Circle.prototype.draw = function(){
-    console.log(`Circle(x=${this.x}, y=${this.y}, r=${this.r})을 그렸습니다.`);
+    console.log(`Circle(x=${this.x}, y
+        =${this.y}, r=${this.r})을 그렸습니다.`);
 }
 
 // test
