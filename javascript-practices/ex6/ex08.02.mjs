@@ -2,7 +2,7 @@
  * unnamed export(default)
  * 
  * 이름 없는 객체 하나를 exports 하는 것이다.
- * 따라서 module.exports(CommonJS) 유사
+ * 따라서 module.exports(CommonJS) 차이점이 있다.
  * 
  */
 
